@@ -27,12 +27,10 @@ div {
     animation-name: hd, back;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 @keyframes hd {
     25% {
