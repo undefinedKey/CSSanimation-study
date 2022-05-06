@@ -16,15 +16,23 @@ main {
     width: 400px;
     height: 400px;
     border: 1px solid #fff;
+    /* box-sizing: border-box; */
+
 }
 
 div {
     width: 100px;
     height: 100px;
     background-color: #2ecc71;
-    animation-name: hd;
+    animation-name: hd, back;
     animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 @keyframes hd {
     25% {
@@ -37,5 +45,19 @@ div {
 
     75% {
         transform: translateY(300px);
+    }
+}
+
+@keyframes back {
+    25% {
+        background-color: #2ecc71;
+    }
+
+    50% {
+        background-color: #34495e;
+    }
+
+    75% {
+        background-color: aqua;
     }
 }
