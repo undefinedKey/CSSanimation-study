@@ -47,7 +47,6 @@ main {
 
 
 # 移动的小方块
-![image](71F8B2C207134645BCDD29E5A52591EA) </br>
-
+![image](https://note.youdao.com/yws/public/resource/9ac922d6ead4655248e2fd11c23dd104/71F8B2C207134645BCDD29E5A52591EA?ynotemdtimestamp=1651807628250) </br>
 
 一个小方块的移动例子
