@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变大变小的爱心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            height: 100vh;
+            width: 100vw;
+            background-color: #34495e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {}
+
+        div::after {
+            content: '♥';
+            color: red;
+            font-size: 26em;
+            animation-name: fons;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        div:hover::after {
+            /* font-size: 10em; */
+            animation-name: fons;
+            animation-duration: 2s;
+        }
+
+        @keyframes fons {
+            25% {
+                font-size: 30em;
+            }
+
+            50% {
+                font-size: 35em;
+            }
+
+            75% {
+                font-size: 40em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+
+        </div>
+    </main>
+</body>
+
+</html>

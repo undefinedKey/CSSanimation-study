@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多动画控制移动端引导页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ecf0f1;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            background: #34495e;
+            transform: scale(0);
+            animation-name: scale, background;
+            animation-duration: 2s;
+            /* 让动画停留在最后一帧 */
+            animation-fill-mode: forwards;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main::after {
+            content: 'progweb.xyz';
+            font-size: 2em;
+            color: #fff;
+            opacity: 0;
+            animation-name: opacity;
+            animation-duration: 2s;
+            /* 动画延迟两秒 */
+            animation-delay: 2s;
+            /* 让动画停留在最后一帧 */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes opacity {
+            to {
+                opacity: .8;
+            }
+        }
+
+
+        @keyframes scale {
+            25% {
+                transform: scale(0.5);
+            }
+
+            50% {
+                transform: scale(1) rotate(360deg);
+            }
+
+            75% {
+                transform: scale(0.5);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes background {
+            25% {
+                background: #3498db;
+            }
+
+            50% {
+                background: #9b59b6;
+            }
+
+            75% {
+                background: #e67e22;
+            }
+
+            to {
+                background: #27ae60;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main></main>
+</body>
+
+</html>
