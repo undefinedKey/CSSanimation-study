@@ -22,7 +22,7 @@
             background: #34495e;
             transform: scale(0);
             animation-name: scale, background;
-            animation-duration: 2s;
+            animation-duration: 3s;
             /* 让动画停留在最后一帧 */
             animation-fill-mode: forwards;
             display: flex;
@@ -30,6 +30,7 @@
             justify-content: center;
         }
 
+        /*
         main::after {
             content: 'progweb.xyz';
             font-size: 2em;
@@ -37,11 +38,39 @@
             opacity: 0;
             animation-name: opacity;
             animation-duration: 2s;
-            /* 动画延迟两秒 */
+            动画延迟两秒 
             animation-delay: 2s;
-            /* 让动画停留在最后一帧 */
+            让动画停留在最后一帧 
             animation-fill-mode: forwards;
         }
+        */
+
+        main::after {
+            content: '♥';
+            color: red;
+            font-size: 5em;
+            animation-name: fons, opacity;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            opacity: 0;
+        }
+
+
+        @keyframes fons {
+            form {
+                font-size: 5em;
+            }
+
+            50% {
+                font-size: 40em;
+            }
+
+            to {
+                font-size: 5em;
+            }
+        }
+
 
         @keyframes opacity {
             to {
