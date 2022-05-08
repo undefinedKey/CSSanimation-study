@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+main {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(#e67e22, #d35400);
+}
+
+
+main {
+    animation-name: move;
+    animation-duration: 5s;
+}
+
+
+@keyframes move {
+    /* 10% {
+        transform: translateY(10vh);
+        transition-timing-function: ease-in;
+    } */
+
+    30% {
+        transform: translateY(20vh);
+        transition-timing-function: ease-in;
+
+    }
+
+    50% {
+        transform: translateY(30vh);
+        transition-timing-function: ease-in;
+
+    }
+
+    70% {
+        transform: translateY(40vh);
+        transition-timing-function: ease-in;
+
+    }
+
+    90% {
+        transform: translateY(50vh);
+        transition-timing-function: ease-in;
+    }
+
+    20%,
+    40%,
+    80%,
+    100% {
+        transform: translateY(80vh);
+        transition-timing-function: ease-out;
+
+    }
+}

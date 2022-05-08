@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="bg">
+
+    </div>
+</body>
+
+<!-- <script src="ball.js"></script> -->
+<!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="ball2.js"></script>
+<script>
+ 
+    $('#bg').mousedown(function (e) {
+        let ballID = $('.ball').length + 1;
+        let ballObj = new Ball(e.clientX - 25, e.clientY - 25, ballID);
+
+        ballObj.dragDown(e)
+    });
+</script> -->
+
+<script src="ball.js"></script>
+<script>
+    // 点击生成小球
+    document.getElementById('bg').onclick = function (e) {
+        let ballID = document.querySelectorAll('.ball').length + 1;
+        console.log(ballID)
+        // e.clinent  返回当前鼠标点击的坐标
+        let ballObj = new Ball(e.clientX - 25, e.clientY - 25, ballID);
+        console.log(ballObj)
+    }
+</script>
+
+</html>

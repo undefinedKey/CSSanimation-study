@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #34495e;
+    display: grid;
+    place-items: center;
+}
+
+
+main {
+    width: 400px;
+    height: 200px;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section {
+    width: 800px;
+    height: 200px;
+    display: grid;
+    grid-template: 1fr/repeat(2, 400px);
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: steps(2, end);
+    animation-iteration-count: infinite;
+
+}
+
+section:hover {
+    animation-play-state: paused;
+}
+
+div {
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slide {
+    to {
+        transform: translateX(-800px);
+    }
+}
