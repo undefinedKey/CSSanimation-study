@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #34495e;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+li {
+    border-radius: 0 50px 50px 0;
+    transform: translateX(-999px);
+    list-style: none;
+    width: 50%;
+    height: 100px;
+    background-color: #e74c3c;
+}
+
+
+
+
+li:nth-child(1) {
+    animation-name: translate1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+li:nth-child(2) {
+    animation-name: translate2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+li:nth-child(3) {
+    animation-name: translate3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+li:nth-child(4) {
+    animation-name: translate4;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+
+
+@keyframes translate1 {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes translate2 {
+    to {
+        transform: translateX(-20%);
+    }
+}
+
+@keyframes translate3 {
+    to {
+        transform: translateX(-40%);
+    }
+}
+
+@keyframes translate4 {
+    to {
+        transform: translateX(-60%);
+    }
+}

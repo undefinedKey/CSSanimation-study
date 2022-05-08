@@ -29,6 +29,7 @@ main {
 }
 
 div {
+    left: -50px;
     width: 5px;
     height: 5px;
     background: linear-gradient(#9b59b6, #ecf0f1);
